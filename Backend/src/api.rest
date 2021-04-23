@@ -1,0 +1,12 @@
+GET http://localhost:3000/vaccines
+###
+POST http://localhost:3000/vaccines
+Content-Type: application/json
+
+{
+    "name": "Pfizer",
+    "description": "nueva",
+    "tecnology": "ArnM",
+    "date": "23/07/1997"
+
+}
