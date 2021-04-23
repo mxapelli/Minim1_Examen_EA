@@ -1,0 +1,13 @@
+<form>
+  <label for="name">Name: </label>
+  <input type="text" class="form-control" id="name" [formControl]="name"><br>
+  <label for="name">Description: </label>
+  <input type="text" class="form-control" id="description" [formControl]="description"><br>
+  <label for="name">Tecnology: </label>
+  <input type="text" class="form-control" id="tecnology" [formControl]="tecnology"><br>
+  <label for="name">Date: </label>
+  <input type="date" class="form-control" id="date" [formControl]="date"><br>
+
+
+  <button (click)="submitData()">Send to Server</button>
+</form>

@@ -27,7 +27,7 @@ const postVaccine = (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         name: req.body.name,
         description: req.body.description,
         tecnology: req.body.tecnology,
-        date: req.body.date,
+        date: req.body.date
     });
     console.log(req.body);
     newVaccine.save().then((data) => {
@@ -42,14 +42,14 @@ const updateVaccine = (req, res) => __awaiter(void 0, void 0, void 0, function* 
             name: req.body.name,
             description: req.body.description,
             tecnology: req.body.tecnology,
-            date: req.body.date,
+            date: req.body.date
         }
     }).then((data) => {
         if (data.nModified == 1) {
-            res.status(201).send("Case Modified");
+            res.status(201).send("Vaccine Modified");
         }
         else {
-            res.status(400).send("Case not modified");
+            res.status(400).send("Vaccine not modified");
         }
     });
 });

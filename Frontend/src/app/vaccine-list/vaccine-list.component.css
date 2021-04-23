@@ -1,0 +1,9 @@
+li:hover {
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.selected {
+  font-size: 32px;
+  font-weight: bold;
+}

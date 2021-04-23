@@ -1,0 +1,12 @@
+<div *ngIf="vaccine">
+  <h2>Selected Vaccine</h2>
+
+  <h4>ID: {{vaccine._id}}</h4>
+  <h4>Name: {{vaccine.name}} <input type="text" class="form-control" id="name" [formControl]="name"></h4>
+  <h4>Description: {{vaccine.description}} <input type="text" class="form-control" id="description" [formControl]="description"></h4>
+  <h4>Tecnology: {{vaccine.tecnology}} <input type="text" class="form-control" id="tecnology"  [formControl]="tecnology"></h4>
+  <h4>Date: {{vaccine.date}} <input type="date" class="form-control" id="date" [formControl]="date"></h4>
+
+  <button (click)="updateData()">Update Vaccine</button>
+
+</div>

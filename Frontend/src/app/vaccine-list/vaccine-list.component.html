@@ -1,0 +1,15 @@
+<h2>List of Vaccines</h2>
+
+<ul>
+  <li *ngFor="let vaccineCurrent of vaccines" (click)="onSelect(vaccineCurrent)" class="vaccines" [class.selected]="vaccineCurrent === selectedVaccine">
+    {{vaccineCurrent.name}}
+  </li>
+</ul>
+
+<app-vaccine-detail [vaccine]="selectedVaccine"></app-vaccine-detail>
+
+<hr>
+<button (click)="clickedAddVaccine()">Add Vaccine</button>
+<div *ngIf="addVaccineClicked === true">
+  <app-vaccine-form></app-vaccine-form>
+</div>
